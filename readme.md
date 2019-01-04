@@ -4,6 +4,7 @@
 # Usage
 1. 直接传递给构造函数
 ```js
+const Multipart=require('wx-multipart')
 const fields=[{
   name:'username',
   value:'小黄'
@@ -21,6 +22,7 @@ new Multipart({
 ```
 2. 单个字段和文件添加
 ```js
+const Multipart=require('wx-multipart')
 let m=new Multipart()
 m.field({
   name:'username',
@@ -50,3 +52,20 @@ new Multipart(config)
     增加文件
 * Multipart.prototype.submit(url)  
     上传表单
+
+# Demo
+examples文件夹下有两个目录
+* backend  
+后端
+* wx_demo  
+小程序
+
+1. 运行后端
+```js
+npm i
+npm run build 
+npm run test
+```
+
+2. 测试小程序
+用微信开发者工具打开wx_demo,提交表单后，上传的文件保存在./examples/tempFiles
