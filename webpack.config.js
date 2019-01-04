@@ -1,7 +1,5 @@
 const path = require('path')
 const MinifyPlugin = require('babel-minify-webpack-plugin')
-console.log(process.argv)
-console.log(process.execArgv)
 module.exports = {
 	entry: './index.js',
 	output: {
