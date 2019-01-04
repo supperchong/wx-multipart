@@ -1,0 +1,35 @@
+{
+  "name": "wx-multipart",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "test": "webpack --output-path  ./examples/wx_demo/utils  --config webpack.config.js&node ./examples/backend/index.js",
+    "lint": "eslint .",
+    "fix": "eslint . --fix"
+  },
+  "author": "",
+  "eslintConfig": {
+    "globals": {
+      "wx": true,
+      "Page":true,
+      "getApp":true
+    }
+  },
+  "license": "ISC",
+  "dependencies": {
+    "mime-types": "^2.1.21"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^7.1.5",
+    "babel-minify-webpack-plugin": "^0.3.1",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^5.11.1",
+    "formidable": "^1.2.1",
+    "webpack": "^4.28.3",
+    "webpack-cli": "^3.1.2"
+  }
+}

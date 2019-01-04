@@ -1,0 +1,3 @@
+.page__title,.page__desc{
+  text-align: center;
+}
