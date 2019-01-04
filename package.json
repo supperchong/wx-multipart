@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "fix": "eslint . --fix"
   },
-  "author": "",
+  "author": "supperchong@gmail.com",
   "eslintConfig": {
     "globals": {
       "wx": true,
