@@ -4,7 +4,7 @@
 # Usage
 1. 直接传递给构造函数
 ```js
-const Multipart=require('wx-multipart')
+const Multipart=require('wx-multipart') //小程序中使用可以直接复制dist目录下的Multipart.min.js文件
 const fields=[{
   name:'username',
   value:'小黄'
