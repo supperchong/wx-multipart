@@ -40,7 +40,7 @@ Page({
 		new Multipart({
 			files,
 			fields
-		}).submit('http://localhost:3000/upload')
+		}).submit('http://localhost:3000/upload',{header:{'Cookie':'name=1'}})
 	},
 	onLoad: function () {
     
