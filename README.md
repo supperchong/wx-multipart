@@ -23,7 +23,7 @@ new Multipart({
 2. 单个字段和文件添加
 ```js
 const Multipart=require('wx-multipart')
-let m=new Multipart()
+let m=new Multipart({files:[], fields:[]})
 m.field({
   name:'username',
   value:'小黄'
