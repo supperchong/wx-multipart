@@ -28,10 +28,10 @@ m.field({
   name:'username',
   value:'小黄'
 })
-m.files({
+m.file({
   filePath:'http://example.png'
 })
-m.files({
+m.file({
   filePath:'http://example2.png'
 })
 m.submit('http://localhost:3000/upload')
